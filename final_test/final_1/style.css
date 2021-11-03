@@ -57,9 +57,22 @@ footer {
     padding: 2rem 0;
 }
 
-.bottom > ul {
+.bottom > dl {
     display: flex;
 }
-.bold {
+
+dt {
+    padding-left: 5px;
+}
+
+dd {
+    padding: 0 5px;
+    border-right: 0.5px solid black;
+}
+dd:last-child {
+    border: none;
+}
+
+.bold, dd {
     font-weight: bold;
 }
