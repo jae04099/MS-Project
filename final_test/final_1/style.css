@@ -1,3 +1,5 @@
+
+/* bdbdbd */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,17 +23,20 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .main_wrap {
     background-color: #f2f2f2;
-    width: 700px;
-    height: 700px;
+    margin: 4rem 0;
+    width: 80%;
+    max-width: 700px;
+    height: 100%;
     border: 1px solid gray;
     border-radius: 15px;
-    margin-top: -150px;
 }
+
 
 /* header */
 h1 {
@@ -61,14 +66,14 @@ h1 {
 }
 /* main */
 .tile_wrap {
-    background-color: rgb(255, 255, 255);
     border-radius: 15px;
-    margin: 0 15px;
+    background: #fff;
+    margin: 20px 15px;
     border: 1px solid gray;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 /* tile */
@@ -87,8 +92,12 @@ h1 {
     padding: 0 10px;
 }
 
+.card_content {
+    width: 100%;
+}
+
 .image {
-    background-color: beige;
+    background-color: rgb(172, 184, 240);
     border-radius: 10px;
     margin: 1rem 0;
     height: 100%;
@@ -111,16 +120,25 @@ h4 {
 .rate, .genre {
     display: inline-block;
 }
+
+.fa-star {
+    color: red;
+}
+.fa-play-circle {
+    color: red;
+    padding-right: 3px;
+}
 .button_wrap {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 10%;
     border-top: 1px solid black;
+    background: #f2f2f2;
 }
 
 .first, .second {
-    width: 47%;
+    width: 48%;
     height: 100%;
     font-size: 0.65rem;
 }
@@ -134,12 +152,9 @@ h4 {
 footer {
     background-color: #f2f2f2;
     display: flex;
-    position: absolute;
-    bottom: 0;
     flex-direction: column;
     padding: 0 6rem;
     width: 100%;
-    margin-top: auto;
 }
 .top {
     /* background-color: aquamarine; */
