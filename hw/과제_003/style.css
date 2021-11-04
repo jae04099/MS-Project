@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head_wrap {
+    position: relative;
+    border: 15px solid #333;
+    width: 700px;
+    height: 800px;
+    border-radius: 1000px 1000px 1000px 1000px;
+    background: #ff833b;
+}
+
+.seed {
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    border-radius: 30px 0px 50px 0px;
+    background: #a7582a;
+    right: 0;
+}
+
+.seed1 {
+    top: 40px;
+    right: -50px;
+    background: #c96e39;
+}
+
+.leaf_wrap {
+    position: relative;
+}
+
+.leaf {
+    position: absolute;
+    background: rgb(14, 160, 46);
+    height: 90px;
+    width: 60px;
+    border-radius: 50px 40px 100px 0px;
+}
+
+.leaf0 {
+    position: absolute;
+    transform: rotate(50deg);
+    background:rgb(29, 216, 69);
+    left:150px;
+    top: -10px;
+}
+.leaf1 {
+    position: absolute;
+    transform: rotate(100deg);
+    background:rgb(10, 173, 45);
+    left:150px;
+    top: -30px;
+}
+.leaf2 {
+    position: absolute;
+    transform: rotate(150deg);
+    background:rgb(5, 124, 31);
+    left:170px;
+    top: -40px;
+}
+
+.head {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    top: 120px;
+    border-radius: 50% 60% 60% 40%;
+    background: #FFE9DC;
+    border: 15px solid #333;
+}
+
+
+.eye_left, .eye_right {
+    position: absolute;
+    width: 70px;
+    height: 80px;
+    border-radius: 70px;
+    background: #3d3d3d;
+}
+
+.eye_light {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 40px;
+    top: 11px;
+    background: #FFE9DC;
+    transform: rotate(45deg);
+}
+
+.eye_left {
+    top: 250px;
+    left: 50px;
+    z-index: 1;
+}
+
+.eye_right {
+    top: 250px;
+    left: 170px;
+    z-index: 1;
+}
+
+.chick {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background: rgb(255, 153, 153);
+    border-radius: 30px 30px 30px 30px;
+    top: 400px;
+    left: 250px;
+    transform: rotate(120deg);
+    z-index: 4;
+}
+
+.chick_sec {
+    left: 300px;
+}
+
+.nose {
+    position: absolute;
+    background:rgb(173, 27, 27);
+    border: 15px solid #333;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    top: 300px;
+    left: -15px;
+    z-index: 1;
+}
+
+
+.nose-shine__main {
+
+}
+
+
+.mouth {
+    position: absolute;
+    background: rgb(85, 85, 85);
+    width: 400px;
+    height: 400px;
+    top: 150px;
+    left: 30px;
+    border-radius: 400px 400px 600px 300px;
+}
+
+.mouth_bg {
+    background: #FFE9DC;
+    background: rgb(85, 85, 85);
+}
+
+.mouth_main {
+    top: 120px;
+    background: #FFE9DC;
+}
