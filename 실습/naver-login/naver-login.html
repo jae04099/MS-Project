@@ -64,13 +64,9 @@
             margin-right: 10px;
         }
 
-        .left,
-        .right {
-            display: inline-block;
-        }
-
-        .right {
-            float: right;
+        .flex_wrap {
+            display: flex;
+            justify-content: space-between;
         }
 
         .lock {
@@ -93,11 +89,13 @@
     <section class="login_wrap">
         <h4>Connect with people</h4>
         <button class="signin"><img class="naverimg" src="./images/title.png" alt="naver logo">Sign in</button>
+        <div class="flex_wrap">
         <div class="left">
             <a class="lock" href="#"><img src="./images/lock.png" alt="lock">Forgot Username</a>
             <a href="#">Password</a>
         </div>
         <div class="right"><a href="#"><img src="./images/user.png" alt="user">Sign up</a></div>
+    </div>
     </section>
 </body>
 

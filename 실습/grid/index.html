@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 500px;
+            height: 500px;
+        }
+        ul {
+            width: 500px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 1fr 0.5fr 1fr;
+            grid-template-rows: 1fr 0.5fr 1fr;
+            grid-gap: 10px;
+        }
+        li {
+            list-style: none;
+        }
+
+        .li1 {
+            background-image: url(./image/1.jpg);
+            display: grid;
+            grid-column: 1 / 3;
+            grid-row: 1 / 1;
+        }
+
+        .li2 {
+            background-image: url(./image/6.jpg);
+            display: grid;
+            grid-column: 3 / 4;
+            grid-row: 1 / 3;
+        }
+        .li3 {
+            background-image: url(./image/2.jpg);
+            display: grid;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .li4 {
+            background-image: url(./image/5.webp);
+            display: grid;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .li5 {
+            background-image: url(./image/3.webp);
+        }
+        .li6 {
+            background-image: url(./image/4.jpg);
+            display: grid;
+            grid-column: 2/4;
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="li1"></li>
+        <li class="li2"></li>
+        <li class="li3"></li>
+        <li class="li4"></li>
+        <li class="li5"></li>
+        <li class="li6"></li>
+    </ul>
+</body>
+</html>
