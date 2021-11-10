@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 3rem;
+        }
+        button {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            border: 3px solid darkred;
+            background: white;
+            overflow: hidden;
+            perspective: 500px;
+        }
+
+        button::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background: darkred;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 100px 100px 0 0;
+            transform-style: preserve-3d;
+            transform: rotateX(90deg);
+            transform-origin: bottom right;
+            transition: all 1s ease;
+        }
+        button:hover::after {
+            transform: rotateX(0deg);
+            color: white;
+        }
+        /* @keyframes up {
+            0% {
+                transform: rotateX(90deg);
+            }
+            100% {
+                transform: rotateX(0deg);
+            }
+        } */
+        /* @keyframes out {
+            from {
+                transform: rotateX(0deg);
+            }
+            to {
+                transform: rotateX(90deg);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <button class="button" type="button">Click Me!!
+    </button>
+</body>
+<script>
+    {
+        const circle = document.querySelector('.circle');
+        const button = document.querySelector('.button')
+        button.onmouseover = (e) => {
+            circle.style.animation = "up 2s ease-out"
+        }
+        button.onmouseout = (e) => {
+            circle.style.animation = "out 2s ease-out"
+        }
+    }
+</script>
+</html>
