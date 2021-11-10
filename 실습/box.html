@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .scene {
+            width: 200px;
+            height: 200px;
+            perspective: 600px;
+        }
+
+        .cube {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transform: translateZ(-100px);
+        }
+
+        .cube_face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .front {
+            transform: rotateY(0deg) translateZ(100px);
+        }
+        .right {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .back {
+            transform: rotateY(180deg) translateZ(100px);
+        }
+        .left {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .top {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .bottom {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="scene">
+        <div class="cube">
+            <div class="cube_face front"></div>
+            <div class="cube_face back"></div>
+            <div class="cube_face right"></div>
+            <div class="cube_face left"></div>
+            <div class="cube_face top"></div>
+            <div class="cube_face bottom"></div>
+        </div>
+    </div>
+</body>
+</html>
