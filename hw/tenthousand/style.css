@@ -26,15 +26,51 @@ li {
 }
 
 /* header */
+header {
+    margin-bottom: 3rem;
+}
+
 header h1 {
     color: aliceblue;
     font-size: 5rem;
     transform: rotate(-5deg);
+    margin-bottom: 5rem;
 }
 
-header strong {
+header q {
     color: #F5DF4D;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main > section:first-child {
     font-size: 1.3rem;
+    line-height: 0.8rem;
+    margin-bottom: 6rem;
+}
+
+main > section:first-child strong {
+    font-size: 2rem;
+}
+
+.form-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.form-wrap .job-wrap {
+    display: flex;
+    justify-content: center;
+}
+.form-wrap .hour-wrap {
+display: flex;
+justify-content: center;
+}
+
+.subBtn {
+    font-size: 1.5rem;
 }
 
 

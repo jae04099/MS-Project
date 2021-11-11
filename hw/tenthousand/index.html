@@ -16,17 +16,17 @@
     <div class="bg-wrap">
         <header>
             <h1>1만 시간의 법칙</h1>
-            <strong>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</strong>
+            <q>연습은 어제의 당신보다 당신을 더 낫게 만든다.</q>
         </header>
         <main>
             <section>
                 <p><strong>1만 시간의 법칙</strong>은</p>
                 <p>어떤 분야의 전문가가 되기 위해서는</p>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</p>
             </section>
-            <section>
+            <section class="form-wrap">
                 <div class="job-wrap">
                     <p>나는</p>
-                    <input id="job" class="job" type="text">
+                    <input id="job" class="job" type="text" required>
                     <p>전문가가 될 것이다.</p>
                 </div>
                 <div class="hour-wrap">
@@ -48,12 +48,12 @@
         </footer>
     </div>
     <script>
-    {
+        {
             const job = document.querySelector('.job');
             const time = document.querySelector('.time');
             const button = document.querySelector('.subBtn');
             const resultSection = document.querySelector('.result');
-            
+
             button.addEventListener('click', () => {
                 let jobValue = job.value;
                 let timeValue = parseInt(10000 / time.value);
@@ -63,8 +63,6 @@
                     <li>대략 ${timeValue} 일 이상 훈련하셔야 합니다!:)</li>
                 </ul>`;
             })
-
-
         }
     </script>
 </body>
