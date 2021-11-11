@@ -26,6 +26,7 @@
     background-color: #5b2386;
     color: white;
     text-align: center;
+    padding-bottom:70px;
 }
 
 .tit-law{
@@ -89,7 +90,7 @@
     background-image: url("../images-law/txt-right.png");
 }
 
-.cont-inp{
+.cont-inp, .cont-result{
     font-size: 24px;
     line-height: 24px;
 }
@@ -108,13 +109,41 @@
     font-size: 24px;
 }
 
-/* util */
 
-.blind {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
+.cont-inp .btn-exc, .btn-go, .btn-share{
+    padding:21px 49px;
+    margin-bottom:147px;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: GmarketSansBold;
+    color:#5B2386;
+    background-color: #FCEE21;
+    border-radius: 56px;
+    cursor:pointer;
+    border:none;
 }
+
+.cont-inp .btn-exc::after{
+    display: block;
+    content:'';
+    width:64px;
+    height:72px;
+}
+
+.cont-result .txt-wannabe, .cont-result .txt-time{
+    line-height:72px;
+}
+.cont-result .txt-wannabe{
+    margin-bottom:17px;
+}
+.cont-result .txt-time{
+    margin-bottom:127px;
+}
+.cont-result .txt-wannabe strong, .cont-result .txt-time strong{
+    font-size:72px;
+    vertical-align:top;
+    font-family: GmarketSansBold;
+}
+
+.btn-share{
+    margin-left:18px;}
