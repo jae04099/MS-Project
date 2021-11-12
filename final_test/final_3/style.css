@@ -1,0 +1,92 @@
+/* util */
+.sr-only {
+    position: absolute; /* position: absolute/fixed 에서만 clip 속성 작동 */
+    margin: -1px; /* 부트스트랩에선 안씀 */
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    overflow: hidden; /* overflow: visible 이면 clip 속성 작동 안됨 */
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%); /* H5BP에선 안씀 */
+}
+
+/* body */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3333;
+}
+
+
+/* main */
+main {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 608px;
+    height: 500px;
+    border-radius: 15px;
+    background: #333333;
+}
+
+main img.poster {
+    position: absolute;
+    top: 52px;
+    left: -64px;
+    width: 281px;
+    border-radius: 10px;
+}
+
+.grid-wrap {
+    display: grid;
+    grid-column: 2/3;
+
+}
+main section.movie-desc {
+    display: flex;
+    margin: 64px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.genre {
+    color: #bdbdbd;
+}
+
+.genre span:first-child::after {
+    content: '';
+    display: inline-block;
+    background: #bdbdbd;
+    width: 1px;
+    height: 13px;
+    margin: 0 1px;
+}
+
+.movie-tit {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.btn-wrap img {
+    width: 25px;
+}
+
+.rate-wrap p {
+    color: #f2f2f2;
+}
+
+.rate-wrap ul {
+    display: flex;
+}
+
+.rate-wrap img {
+    width: 50px;
+}
