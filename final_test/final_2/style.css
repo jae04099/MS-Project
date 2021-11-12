@@ -23,7 +23,14 @@ body {
 }
 
 .btn-prev {
-
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+.btn-next {
+    position: absolute;
+    top: 200px;
+    right: 90px;
 }
 
 .img-wrap {
