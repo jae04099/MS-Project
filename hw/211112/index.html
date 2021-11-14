@@ -6,18 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
+    <section class="modal-wrap">
+        <header>
+            <h1>로그인 또는 회원가입</h1>
+            <button type="button"><i class="fas fa-times"></i></button>
+        </header>
+        <main>
+            <section>
+                <h2 class="desc-main">위니브에서 여러분의 궁금증을 해결하세요!:)</h2>
+                <form action="">
+                    <label class="sr-only" for="id">id</label>
+                    <input class="input-id" type="text" placeholder="아이디">
+                    <label class="sr-only" for="pw">password</label>
+                    <input class="input-pw" type="password" placeholder="비밀번호">
+                    <button class="btn-keep"><img src="./image/check-box.png" alt="checkbox">로그인 상태 유지</button>
+                    <label class="sr-only" for="login">login</label>
+                    <button class="btn-submit" type="submit">로그인</button>
+                </form>
+                <div class="wrap-signup">
+                    <a class="up" href="#">회원가입 </a>
+                    <a class="find" href="#"> 아이디/비밀번호 찾기</a>
+                </div>
+            </section>
+            <section>
+                <h4 class="or">또는</h4>
+            </section>
+            <section>
+                <div class="wrap-sns">
+                    <a href="#"><img src="./image/Google__G__Logo 1.png" alt="google logo">구글 계정으로 로그인</a>
+                    <a href="#"><img src="./image/facebook.png" alt="facebook logo">페이스북 계정으로 로그인</a>
+                    <a href="#"><img src="./image/naver-logo.png" alt="naver logo">네이버 계정으로 로그인</a>
+                    <a href="#"><img src="./image/message-circle.png" alt="kakaotalk logo">카카오톡 계정으로 로그인</a>
+                </div>
+            </section>
+        </main>
+    </section>
+    <main class="main-login hidden">
         <h1>
             <img src="./image/Group.png" alt="company logo">
         </h1>
         <p>위니브를 더 즐겁고 편리하게 이용하세요</p>
-        <a href="/hw/211112/login.html">로그인</a>
+        <a class="loginBtn" href="#">로그인</a>
     </main>
+    <script>
+        {
+            const loginBtn = document.querySelector('.loginBtn');
+            const mainLogin = document.querySelector('.main-login');
+            const modal = document.querySelector('.modal-wrap');
+            const rmModal = document.querySelector('.fa-times');
+            const id = document.querySelector('.input-id');
+            const password = document.querySelector('.input-pw');
+            const submit = document.querySelector('.btn-submit');
+
+            loginBtn.addEventListener('click', () => {
+                mainLogin.classList.add('hidden');
+                modal.classList.remove('hidden');
+            })
+            rmModal.addEventListener('click', () => {
+                mainLogin.classList.remove('hidden');
+                modal.classList.add('hidden');
+            })
+
+
+            submit.addEventListener('click', () => {
+                console.log(id.value)
+                if (id.value === '') {
+                    id.classList.add('warning');
+                }else if (id.classList.contains('warning') && id.value !== ''){
+                    id.classList.remove('warning')
+                }
+                if (password.value === '') {
+                    password.classList.add('warning');
+                }else if (password.classList.contains('warning') && password.value !== ''){
+                    password.classList.remove('warning')
+                }
+            })
+        }
+    </script>
 </body>
 
 </html>
