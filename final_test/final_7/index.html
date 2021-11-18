@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>ColaCola</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="sr-only">로고 이미지</h1>
+        <img src="./image/logo.svg" alt="colacola logo image">
+    </header>
+    <main>
+        <section class="machine">
+            <h2 class="sr-only">machine</h2>
+            <div class="colas">
+                <div class="wrap-cola selected">
+                    <article class="cola">
+                        <img src="./image/콜라 (1).svg" alt="original cola">
+                        <figcaption>Original Cola</figcaption>
+                        <p class="price">1000원</p>
+                    </article>
+                </div>
+                <div class="wrap-cola">
+                    <article class="cola">
+                        <img src="./image/콜라 (1).svg" alt="original cola">
+                        <figcaption>Original Cola</figcaption>
+                        <p class="price">1000원</p>
+                    </article>
+                </div>
+                <div class="wrap-cola">
+                    <article class="cola">
+                        <img src="./image/콜라.svg" alt="original cola">
+                        <figcaption>original Cola</figcaption>
+                        <p class="price">1000원</p>
+                    </article>
+                </div>
+                <div class="wrap-cola">
+                    <article class="cola">
+                        <img src="./image/콜라 (1).svg" alt="original cola">
+                        <figcaption>Original Cola</figcaption>
+                        <p class="price">1000원</p>
+                    </article>
+                </div>
+                <div class="wrap-cola selected">
+                    <article class="cola">
+                        <img src="./image/콜라 (3).svg" alt="original cola">
+                        <figcaption>Original Cola</figcaption>
+                        <p class="price">1000원</p>
+                    </article>
+                </div>
+                <div class="wrap-cola">
+                    <article class="cola">
+                        <img src="./image/콜라 (2).svg" alt="original cola">
+                        <figcaption>Original Cola</figcaption>
+                        <p class="price">1000원</p>
+                    </article>
+                </div>
+            </div>
+            <div class="wrap-input">
+                <form>
+                    <div class="wrap-input-left">
+                        <p class="balance">잔액: <span>1,000원</span></p>
+                        <label for="input-balance"></label>
+                        <input class="input-balance" type="text" placeholder="입금액입력">
+                        <div class="wrap-cart">
+                            <div class="wrap-one-bev">
+                                <div class="wrap-exc-num">
+                                    <img src="./image/콜라 (1).svg" alt="cola">
+                                    <figcaption>Original_Cola</figcaption>
+                                </div>
+                                <p class="result-num">1</p>
+                            </div>
+                            <div class="wrap-one-bev">
+                                <div class="wrap-exc-num">
+                                    <img src="./image/콜라 (1).svg" alt="cola">
+                                    <figcaption>Original_Cola</figcaption>
+                                </div>
+                                <p class="result-num">1</p>
+                            </div>
+                            <div class="wrap-one-bev">
+                                <div class="wrap-exc-num">
+                                    <img src="./image/콜라 (1).svg" alt="cola">
+                                    <figcaption>Original_Cola</figcaption>
+                                </div>
+                                <p class="result-num">1</p>
+                            </div>
+                            <div class="wrap-one-bev">
+                                <div class="wrap-exc-num">
+                                    <img src="./image/콜라 (1).svg" alt="cola">
+                                    <figcaption>Original_Cola</figcaption>
+                                </div>
+                                <p class="result-num">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-input-right">
+                        <button class="return" type="button">거스름돈 반환</button>
+                        <button class="charge" type="button">입금</button>
+                        <button class="get-beverage" type="button">획득</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="result">
+            <h2 class="sr-only">machine result</h2>
+            <article class="wrap-mymoney">
+                <p class="mymoney">소지금<span>25,000 원</span></p>
+            </article>
+            <article class="wrap-final-beverages">
+                <h2>획득한 음료</h2>
+                <div class="wrap-cart wrap-cart-right">
+                    <div class="wrap-one-bev">
+                        <div class="wrap-exc-num">
+                            <img src="./image/콜라 (1).svg" alt="cola">
+                            <figcaption>Original_Cola</figcaption>
+                        </div>
+                        <p class="result-num">1</p>
+                    </div>
+                </div>
+                <p class="final-price">총금액: <span>9.000원</span></p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
