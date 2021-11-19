@@ -231,3 +231,21 @@ section.result {
     float: right;
     font-size: 12px;
 }
+
+.sold-out {
+}
+
+
+@media screen and (max-width: 750px) {
+    body {
+        background: #fff;
+    }
+    header {
+        margin: 0;
+    }
+    main {
+        display: flex;
+        max-width: 360px;
+        flex-direction: column;
+    }
+}
