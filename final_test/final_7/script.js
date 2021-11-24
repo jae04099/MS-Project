@@ -6,7 +6,11 @@ const colas = document.querySelector('.colas');
 const returnCharge = document.querySelector('.return');
 const balance = document.querySelector('.balance > span');
 const cartTemp = document.querySelector('.wrap-cart-temp');
+const btnInputBalance = document.querySelector('.charge');
+let inputBalance = document.querySelector('.input-balance');
 let appendedBev = [];
+let realBalance = 0;
+
 
 colas.innerHTML = data.map(data => `<div class="wrap-cola">
 <article class="cola">
@@ -26,9 +30,19 @@ for (const btn of selectBtn) {
 }
 
 returnCharge.addEventListener('click', () => {
-    balance.innerHTML = `<span>0원</span>`
+    realBalance = 0;
+    balance.innerHTML = `<span>${realBalance}원</span>`
 })
 
+btnInputBalance.addEventListener('click', () => {
+    realBalance += parseInt(inputBalance.value);
+    balance.innerHTML = `<span>${realBalance}원</span>`
+    resetInput()
+})
+
+function resetInput () {
+    inputBalance.value = '';
+}
 
 const addBevtoList = () => {
     cartTemp.innerHTML = appendedBev.map(data => `<div class="wrap-one-bev">
@@ -39,6 +53,7 @@ const addBevtoList = () => {
     <p class="result-num">${data[0].count}</p>
 </div>`).join('')
 }
+
 
 
 
