@@ -20,6 +20,7 @@ let selectBtn = document.querySelectorAll('.price');
 for (const btn of selectBtn) {
     btn.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.classList.add('selected')
+        if(appendedBev)
         appendedBev.push(data.filter(dat => dat.index == e.target.id))
         addBevtoList();
     })

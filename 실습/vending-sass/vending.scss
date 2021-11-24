@@ -1,0 +1,59 @@
+/* util */
+@mixin flex-setting($item, $content, $direction: row) {
+    display: flex;
+    align-items: $item;
+    justify-content: $content;
+    flex-direction: $direction;
+    @content
+}
+
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    background: #eae8fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* header */
+
+header {
+    margin-bottom: 50px;
+}
+
+/* main */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 28px;
+    width: 748px;
+    height: 545px;
+}
+
+section {
+    .machine {
+        grid-column: 1/2;
+        background: white;
+        padding: 31px 27px 28px 27px;
+        .colas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 277px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
