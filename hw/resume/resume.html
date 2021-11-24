@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="grid-cols-3 grid-rows-4 m-20 p-10 border-2 border-gray-500 border-opacity-100 text-gray-100 bg-gray-900">
+    <header class="flex col-start-3 justify-between pb-10 text-sm">
+           <div class="left text-gray-400">Front-end Web Developer</div>
+           <ul class="right text-gray-400">
+               <address>Seodaemun-gu, Seoul, South Korea</address>
+               <li>jae04099@likelion.org</li>
+               <li>(82)10-0000-0000</li>
+           </ul>
+    </header>
+   <section class="bg-gradient-to-r from-green-400 to-blue-500 flex justify-evenly items-center pb-10 pt-5 rounded-xl">
+       <img class="w-1/4" src="./memoji.png" alt="my dog">
+       <h1 class="font-body size-4 text-8xl font-black text-gray-50 drop-shadow-xl">GYURI LEE</h1>
+   </section>
+   <section class="flex mt-10 pb-10 pt-10 border-t border-b">
+       <h2 class="">Introduce</h2>
+       <article class="ml-20">
+           <h3 class="pb-5 text-gray-400">" 상상을 현실로 구현해내고, 서비스를 이용자들이 자랑하고싶게 만들어내는 <span class="font-bold text-gray-100">이규리</span>입니다. "</h3>
+           <p class="text-gray-400">주 전공은 <span class="font-bold text-gray-100">결과물이 바로 나오지 않아 만족스럽지 않았어요</span>.
+            처음에는 웹디자인과 그래픽 디자인을 좋아했는데, 프로그래밍 수업을 듣고 이 직업이 취미도 살리고 열정도 살려 <span class="font-bold text-gray-100">전문가가 될 수 있겠다</span> 생각했어요.</p><p class="text-gray-400"> 먼저 <span class="font-bold text-gray-100">제가 인정하고 다른 이 들이 인정하는 웹 전문가</span>가 되고 싶어요. 디자인, 웹 더 나아가 앱 등 미래에 나올 다양한 분야까지 다재다능하고 트렌디한 개발자가 될거에요.</p>
+       </article>
+   </section>
+   <section class="flex mt-10 pb-10 border-b">
+    <h2>Skills</h2>
+    <article class="ml-20 flex items-center font-bold">
+        <div class="rounded-full py-3 px-6 bg-green-500 ml-20">html | 30%</div>
+        <div class="rounded-full py-3 px-6 bg-blue-700 ml-10">css | 30%</div>
+        <div class="rounded-full py-3 px-6 bg-blue-800 ml-10">javascript | 30%</div>
+    </article>
+</section>
+   <section class="flex mt-10 pb-10 border-b">
+       <h2>Projects</h2>
+       <article class="ml-20">
+           <ul>
+               <li class="pb-5"><em class="block mb-5 font-bold bg-blue-900">" 1만시간의 법칙 "</em><p>1만시간의 법칙을 아시나요? 여러분들이 되고싶은 직업의 전문가가 되려면 얼마를 공부해야 할까요? 이를 계산해주는 서비스 입니다.</p><span class="text-blue-200">소요시간: 1일</span></li>
+               <li class="pb-5"><em class="block mb-5 font-bold bg-blue-900">" Vending Machine "</em><p>웹사이트에서 콜라를 주문해보세요. 조금 더 귀엽게 주문해볼까요? 음료 자판기 서비스입니다.</p><span class="text-blue-200">소요시간: 2일</span></li>
+               <li class="pb-5"><em class="block mb-5 font-bold bg-blue-900">" Landing Page "</em><p>우리집 고양이를 소개하는 소개페이지 입니다.</p><span class="text-blue-200">소요시간: 3일</span></li>
+               <li><em class="block mb-5 font-bold bg-blue-900">" 감귤마켓 "</em><p>감귤을 주문할 수 있는 주문 서비스 입니다. 배달도 가능해요! 메신저 기능도 있습니다.</p><span class="text-blue-200">소요시간: 1주일</span></li>
+           </ul>
+       </article>
+   </section>
+   <footer class="text-7xl text-center text-gray-300 mt-10 font-black">
+       FEEL FREE TO CONTACT ME 24/7
+   </footer>
+</body>
+</html>
+
+<!-- 여러분을 표현할 수 있는 단 한장의 모의 이력서!
+* 커리큘럼 대로 skill set을 갖추고 있다고 가정
+* github push는 60회
+* github push 비중은 html 30% / css 30% / js 40%
+* project는 총 4건
+  - 1만시간의법칙(1일), 벤딩머신(2일), 렌딩페이지(3일), 감귤마켓(1주일)
+* 이미지 프로필 단 하나의 이미지
+* 별도 CSS 불허
+* 심사는 디자인 뿐만 아니라 글귀도 판단합니다. 아주 단촐하고 진실되게 쓰는 것도 좋습니다. 🙂
+* (선택) 완성된 코드는 다른 동기들을 위해 결과물(캡쳐)과 함께 바로 아래 공유! 🙂 -->

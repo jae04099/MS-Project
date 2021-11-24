@@ -72,13 +72,13 @@ section.machine {
     font-size: 9px;
 }
 
-.cola p {
-    padding: 3px 15px;
+.cola .price {
+    padding: 0 15px;
     background: #6327FE;
     border-radius: 50px;
     color: #fff;
     font-size: 12px;
-    line-height: 17px;
+    line-height: 20px;
 }
 
 .wrap-input form {
@@ -247,5 +247,8 @@ section.result {
         display: flex;
         max-width: 360px;
         flex-direction: column;
+    }
+    .final-price {
+        margin-bottom: 30px;
     }
 }
