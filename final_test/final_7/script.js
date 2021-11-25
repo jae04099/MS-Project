@@ -7,9 +7,11 @@ const returnCharge = document.querySelector('.return');
 const balance = document.querySelector('.balance > span');
 const cartTemp = document.querySelector('.wrap-cart-temp');
 const btnInputBalance = document.querySelector('.charge');
+const pocket = document.querySelector('.mymoney > span');
 let inputBalance = document.querySelector('.input-balance');
 let appendedBev = [];
 let realBalance = 0;
+let pocketMoney = 25000;
 
 
 colas.innerHTML = data.map(data => `<div class="wrap-cola">
@@ -19,6 +21,10 @@ colas.innerHTML = data.map(data => `<div class="wrap-cola">
 <button class="price" id="${data.index}" type="button">${data.price}원</button>
 </article>
 </div>`).join('')
+
+pocket.innerHTML = `<span>${pocketMoney}원</span>`;
+balance.innerHTML = `<span>${realBalance}원</span>`;
+
 
 let selectBtn = document.querySelectorAll('.price');
 for (const btn of selectBtn) {
@@ -30,17 +36,24 @@ for (const btn of selectBtn) {
 }
 
 returnCharge.addEventListener('click', () => {
+    pocketMoney += parseInt(realBalance);
+    pocket.innerHTML = `<span>${pocketMoney}원</span>`
     realBalance = 0;
     balance.innerHTML = `<span>${realBalance}원</span>`
 })
 
 btnInputBalance.addEventListener('click', () => {
+    pocketMoney -= parseInt(inputBalance.value);
     realBalance += parseInt(inputBalance.value);
+    pocket.innerHTML = `<span>${pocketMoney}원</span>`
     balance.innerHTML = `<span>${realBalance}원</span>`
-    resetInput()
+    resetInput();
 })
 
-function resetInput () {
+// 입금 버튼을 누르면 입금액이 사라지고 소지금에서 차단되고 잔액을 더함
+// 거스름돈 버튼을 누르면 잔액이 0이 되고 잔액 비용은 소지금에 더해짐
+
+function resetInput() {
     inputBalance.value = '';
 }
 
