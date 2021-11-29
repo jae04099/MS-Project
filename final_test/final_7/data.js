@@ -5,7 +5,7 @@ export default [
             'price': '1000',
             'img': './image/콜라(1).svg',
             'isSelected': false,
-            'count': 0
+            'count': 1
         },
         {
             'index': 1,
@@ -13,7 +13,7 @@ export default [
             'price': '1000',
             'img': './image/콜라(2).svg',
             'isSelected': false,
-            'count': 0
+            'count': 1
         },
         {
             'index': 2,
@@ -21,7 +21,7 @@ export default [
             'price': '1000',
             'img': './image/콜라(3).svg',
             'isSelected': false,
-            'count': 0
+            'count': 1
         },
         {
             'index': 3,
@@ -29,7 +29,7 @@ export default [
             'price': '1000',
             'img': './image/콜라.svg',
             'isSelected': false,
-            'count': 0
+            'count': 1
         },
         {
             'index': 4,
@@ -37,7 +37,7 @@ export default [
             'price': '1000',
             'img': './image/콜라(1).svg',
             'isSelected': false,
-            'count': 0
+            'count': 1
         },
         {
             'index': 5,
@@ -45,6 +45,6 @@ export default [
             'price': '1000',
             'img': './image/콜라(1).svg',
             'isSelected': false,
-            'count': 0
+            'count': 1
         }
 ]
